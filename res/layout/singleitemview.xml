@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/namelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/namelabel" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dip"
+        android:layout_toRightOf="@+id/namelabel" />
+
+    <TextView
+        android:id="@+id/descriptionlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namelabel"
+        android:text="@string/descriptionlabel" />
+    
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="40dip"
+        android:layout_toRightOf="@+id/descriptionlabel" />
+
+    <TextView
+        android:id="@+id/stargazers_countlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionlabel"
+        android:text="@string/stargazers_countlabel" />
+	  <ImageView
+        android:id="@+id/phone_icon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="40dip"
+        android:layout_centerHorizontal="true"
+		android:src="@drawable/shape_star"/>
+    <TextView
+        android:id="@+id/stargazers_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_alignParentLeft="true"
+        android:layout_toRightOf="@+id/stargazers_countlabel" />
+      <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#000000"
+        android:padding="1dp" 
+        android:layout_marginLeft="100dip"
+        android:layout_toRightOf="@id/stargazers_count"/>
+ <TextView
+        android:id="@+id/owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/avatar" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Github Parse</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="namelabel">""</string>
+    <string name="descriptionlabel">""</string>
+    <string name="stargazers_countlabel">""</string>
+    
+</resources>

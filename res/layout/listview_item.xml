@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<LinearLayout 
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+
+  >
+   
+   <TextView
+        android:id="@+id/namelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/namelabel" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/namelabel" 
+        android:layout_marginLeft="40dip"
+        android:textSize="25px"/>
+    </LinearLayout>
+    <LinearLayout 
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+
+  >
+     <TextView
+        android:id="@+id/descriptionlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namelabel"
+        android:text="@string/descriptionlabel" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/descriptionlabel" 
+        android:layout_marginLeft="40dip"
+        android:textSize="20px"/>
+     <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/descriptionlabel" 
+        android:layout_marginLeft="40dip"
+        android:textSize="20px"/>
+</LinearLayout>
+<LinearLayout 
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="wrap_content"
+android:layout_marginTop="20dp"
+   android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+
+  >
+  
+    <TextView
+        android:id="@+id/stargazers_countlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        
+        android:text="@string/stargazers_countlabel" />
+	 
+    <ImageView
+        android:id="@+id/phone_icon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="40dip"
+        android:layout_centerHorizontal="true"
+		android:src="@drawable/shape_star"/>
+    <TextView
+        android:id="@+id/stargazers_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_toRightOf="@+id/stargazers_countlabel" 
+        android:layout_alignParentLeft="true"
+        android:textSize="20px"/>
+     <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:background="#000000"
+        android:padding="1dp" 
+        android:layout_marginLeft="100dip"
+        android:layout_toRightOf="@id/stargazers_count"/>
+     <TextView
+        android:id="@+id/owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/avatar" 
+        android:layout_alignParentRight="true"
+        
+        android:textSize="20px"/>
+    
+    </LinearLayout>
+
+   
+
+</LinearLayout>
